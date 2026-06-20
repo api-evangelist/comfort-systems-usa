@@ -2,7 +2,7 @@ aid: comfort-systems-usa
 url: https://raw.githubusercontent.com/api-evangelist/comfort-systems-usa/refs/heads/main/apis.yml
 name: Comfort Systems USA
 type: Index
-image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 tags:
   - HVAC
   - Mechanical
@@ -19,7 +19,7 @@ apis:
       - HVAC
       - Mechanical
       - Construction
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     baseURL: https://api.comfortsystemsusa.com
     humanURL: https://developer.comfortsystemsusa.com
     properties:
