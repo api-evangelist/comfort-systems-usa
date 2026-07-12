@@ -1,0 +1,20 @@
+generated: '2026-07-11'
+method: probed
+source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
+hosts:
+- host: www.comfortsystemsusa.com
+  https: true
+  tls_version: TLSv1.3
+  cert_expires: Aug 23 01:53:57 2026 GMT
+  hsts: false
+- host: developer.comfortsystemsusa.com
+  https: false
+- host: api.comfortsystemsusa.com
+  https: false
+domains:
+- domain: comfortsystemsusa.com
+  dnssec: false
+  caa: []
+  spf: true
+  dmarc: true
+  dmarc_policy: none
