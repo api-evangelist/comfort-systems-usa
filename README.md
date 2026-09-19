@@ -64,20 +64,22 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Comfort Systems USA is a major US corporation and Fortune 1000 company. The Comfort Systems USA API provides programmatic access to its platform services, data, and integrations for enterprise customers and partners.
+Comfort Systems USA (NYSE: FIX) is a Houston-based mechanical, electrical and plumbing contractor that installs, services and maintains HVAC, piping, electrical and building-automation systems for commercial, industrial and institutional buildings through more than 45 operating companies in over 170 US locations.
+
+## Not published by Comfort Systems USA
+
+This profile records an honest absence, checked 2026-09-19. Comfort Systems USA publishes **no public API, developer program, SDK, OpenAPI, llms.txt, agent card or `/.well-known/` document**. An earlier scaffolded entry on this repository named `api.comfortsystemsusa.com` and `developer.comfortsystemsusa.com`; neither host exists in DNS, and the entry has been removed. The company's web presence is a WordPress marketing site (`comfortsystemsusa.com`, which answers a SiteGround bot challenge to crawlers) and a Notified investor-relations site (`investors.comfortsystemsusa.com`). The only machine surface on the domain is the stock WordPress REST API at `/wp-json/`, a CMS endpoint rather than a company product. See `x-coverage` in `apis.yml` and `well-known/` for the probe record.
 
 **URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/comfort-systems-usa/refs/heads/main/apis.yml)
 
-**Run:** [Capabilities Using Naftiko](https://github.com/naftiko/fleet?utm_source=api-evangelist&utm_medium=readme&utm_campaign=company-api-evangelist&utm_content=repo)
-
 ## Tags:
 
- - HVAC, Mechanical, Construction
+ - HVAC, Mechanical, Construction, Electrical, Plumbing, Building Automation, Modular Construction, Building Services, Energy Management, Fortune 1000
 
 ## Timestamps
 
 - **Created:** 2026-04-19
-- **Modified:** 2026-04-19
+- **Modified:** 2026-09-19
 
 ## Maintainers
 

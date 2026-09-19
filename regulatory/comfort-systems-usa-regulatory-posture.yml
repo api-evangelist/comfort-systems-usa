@@ -1,0 +1,45 @@
+generated: '2026-09-19'
+method: searched
+probe: true
+source: https://comfortsystemsusa.com/privacy-policy/
+note: >-
+  Comfort Systems USA is a mechanical, electrical and plumbing contractor (NYSE: FIX, SIC 1731)
+  whose public web presence is a WordPress marketing site plus a Notified investor-relations site.
+  Every conventional regulatory path on comfortsystemsusa.com answers HTTP 202 with a SiteGround
+  sgcaptcha bot-challenge shell rather than a page, so live probing establishes nothing beyond the
+  challenge itself; the site's own navigation and footer (Wayback capture 2026-06-24) carry a single
+  legal page, /privacy-policy/. That policy was read from its Wayback capture of 2026-06-12 and
+  is the one harvested signal below. No trust center, security.txt, accessibility statement,
+  subprocessor list, DPA, SBOM, transparency report or AI disclosure is published. The
+  sustainability page links a 2025 Sustainability Report, Code of Conduct, Labor and Human Rights
+  Policy, Supplier Code of Conduct and Environmental Policy PDFs — corporate ESG documents, none
+  of which is a signal in this vocabulary. An almost-empty signals map is the measurement.
+probed:
+- {url: https://comfortsystemsusa.com/accessibility, status: 202, note: sgcaptcha challenge shell}
+- {url: https://comfortsystemsusa.com/accessibility/vpat, status: 202, note: sgcaptcha challenge shell}
+- {url: https://comfortsystemsusa.com/legal/subprocessors, status: 202, note: sgcaptcha challenge shell}
+- {url: https://comfortsystemsusa.com/legal/dpa, status: 202, note: sgcaptcha challenge shell}
+- {url: https://comfortsystemsusa.com/privacy/requests, status: 202, note: sgcaptcha challenge shell}
+- {url: https://comfortsystemsusa.com/transparency, status: 202, note: sgcaptcha challenge shell}
+- {url: https://comfortsystemsusa.com/security/sbom, status: 202, note: sgcaptcha challenge shell}
+- {url: https://comfortsystemsusa.com/docs/data-residency, status: 202, note: sgcaptcha challenge shell}
+- {url: https://comfortsystemsusa.com/ai/transparency, status: 202, note: sgcaptcha challenge shell}
+- {url: https://comfortsystemsusa.com/legal/report-content, status: 202, note: sgcaptcha challenge shell}
+- {url: https://comfortsystemsusa.com/terms, status: 202, note: sgcaptcha challenge shell; no terms page exists in the site navigation}
+- {url: https://comfortsystemsusa.com/security, status: 202, note: sgcaptcha challenge shell}
+- {url: https://comfortsystemsusa.com/privacy-policy/, status: 202, note: sgcaptcha challenge shell live; page confirmed via Wayback 2026-06-12 capture}
+- {url: https://www.comfortsystemsusa.com/.well-known/security.txt, status: 202, note: sgcaptcha challenge shell}
+signals:
+  data_subject_request:
+    url: https://comfortsystemsusa.com/privacy-policy/
+    channel: email
+    contact: information@comfortsystemsusa.com
+    evidence:
+    - source: https://web.archive.org/web/20260612055350/https://comfortsystemsusa.com/privacy-policy/
+      keywords: [request access, correct or delete, California Shine The Light, Do Not Track]
+    note: >-
+      The privacy policy states that a visitor may email information@comfortsystemsusa.com to
+      request access to, correction of, or deletion of personal information they provided, and
+      carries a California "Shine the Light" disclosure. It is an email channel, not a request
+      portal or API. The same policy says the site does not respond to Do Not Track and makes no
+      statement about Global Privacy Control, so global_privacy_control is not recorded.

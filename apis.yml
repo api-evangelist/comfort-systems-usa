@@ -27,36 +27,122 @@ accessModel:
   method: derived
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/comfort-systems-usa.png
 tags:
-  - HVAC
-  - Mechanical
-  - Construction
-description: >-
-  Comfort Systems USA is a major US corporation and Fortune 1000 company. The Comfort Systems USA API provides programmatic access to its platform services, data, and integrations for enterprise customers and partners.
+- HVAC
+- Mechanical
+- Construction
+- Electrical
+- Plumbing
+- Building Automation
+- Modular Construction
+- Building Services
+- Energy Management
+- Fortune 1000
+description: 'Comfort Systems USA (NYSE: FIX) is a Houston-based mechanical, electrical and plumbing contractor
+  — one of the largest in the United States — that installs, services and maintains HVAC, piping, electrical and
+  building-automation systems for commercial, industrial and institutional buildings through more than 45 operating
+  companies in over 170 locations. Its business lines are construction (engineering and design, prefabrication,
+  virtual construction), modular and off-site construction, building services (maintenance, on-demand and retrofit)
+  and building automation (controls, monitoring, security and energy management). The company publishes no public
+  API, developer program, SDK or machine-readable contract; its web presence is a WordPress marketing site and an
+  investor-relations site.'
 created: '2026-04-19'
-modified: '2026-04-19'
+modified: '2026-09-19'
 specificationVersion: '0.23'
-apis:
-  - aid: comfort-systems-usa:comfort-systems-usa-api
-    name: Comfort Systems USA API
-    tags:
-      - HVAC
-      - Mechanical
-      - Construction
-    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
-    baseURL: https://api.comfortsystemsusa.com
-    humanURL: https://developer.comfortsystemsusa.com
-    properties:
-      - url: https://developer.comfortsystemsusa.com/docs
-        type: Documentation
-    description: >-
-      The Comfort Systems USA API provides access to platform services and data for enterprise integration and automation.
+apis: []
 common:
-  - type: DomainSecurity
-    url: security/comfort-systems-usa-domain-security.yml
-  - type: LinkedIn
-    url: https://www.linkedin.com/company/comfort-systems-usa
-  - type: Website
-    url: https://www.comfortsystemsusa.com
+- type: Website
+  url: https://www.comfortsystemsusa.com
+  x-note: live probe answers HTTP 202 SiteGround sgcaptcha bot challenge to our crawler; page exists (Wayback 2026-06-24,
+    DNS resolves, TLS valid) — an edge policy, not a dead pointer
+- type: About
+  url: https://comfortsystemsusa.com/company-profile/
+  x-note: live 202 sgcaptcha challenge; confirmed via Wayback capture 2026-05-28
+- type: Leadership
+  url: https://comfortsystemsusa.com/management-team/
+  x-note: live 202 sgcaptcha challenge; confirmed via Wayback capture 2026-05-28
+- type: BoardOfDirectors
+  url: https://comfortsystemsusa.com/board-of-directors/
+  x-note: live 202 sgcaptcha challenge; confirmed via Wayback capture 2026-06-12
+- type: Careers
+  url: https://comfortsystemsusa.com/careers/
+  x-note: live 202 sgcaptcha challenge; confirmed via Wayback capture 2026-05-28
+- type: ContactUs
+  url: https://comfortsystemsusa.com/contact-us/
+  x-note: live 202 sgcaptcha challenge; confirmed via Wayback capture 2026-06-12
+- type: Sustainability
+  url: https://comfortsystemsusa.com/sustainability/
+  x-note: live 202 sgcaptcha challenge; confirmed via Wayback capture 2026-06-12; links 2025 Sustainability Report,
+    Code of Conduct and supplier policies
+- type: PrivacyPolicy
+  url: https://comfortsystemsusa.com/privacy-policy/
+  x-note: live 202 sgcaptcha challenge; confirmed via Wayback capture 2026-06-12; the only legal page the site publishes
+    — no terms of use exists
+- type: DataSubjectRequest
+  url: https://comfortsystemsusa.com/privacy-policy/
+  x-note: email channel (information@comfortsystemsusa.com) for access, correction and deletion requests, stated
+    in the privacy policy — harvest record in regulatory/
+- type: InvestorRelations
+  url: https://investors.comfortsystemsusa.com/
+  x-note: live probe answers Akamai 403 Access Denied to our crawler on every path; Notified IR site confirmed via
+    Wayback capture 2026-01-08
+- type: Newsroom
+  url: https://investors.comfortsystemsusa.com/news-releases
+  x-note: live Akamai 403 to our crawler; press-release index confirmed via Wayback capture 2025-12-19
+- type: SECFilings
+  url: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001035983
+  x-note: EDGAR CIK 0001035983, COMFORT SYSTEMS USA INC, ticker FIX, large accelerated filer; data.sec.gov submissions
+    probed 200
+- type: LinkedIn
+  url: https://www.linkedin.com/company/comfort-systems-usa
+- type: Facebook
+  url: https://www.facebook.com/ComfortSystemsUsa
+  x-note: linked from the site footer (Wayback 2026-06-24); not probed live
+- type: DomainSecurity
+  url: security/comfort-systems-usa-domain-security.yml
+- type: WellKnownProbe
+  url: well-known/comfort-systems-usa-well-known.yml
+  x-note: probe record only — no /.well-known/ document is served on any host, so no WellKnown pointer is emitted
+- type: RegulatoryPosture
+  url: regulatory/comfort-systems-usa-regulatory-posture.yml
+  x-note: one harvested signal (data_subject_request); every conventional path answers the sgcaptcha challenge
+- type: Plans
+  url: plans/comfort-systems-usa-plans-pricing.yml
+  x-note: plan_count 0 — no API, no API pricing
+- type: RateLimits
+  url: rate-limits/comfort-systems-usa-rate-limits.yml
+  x-note: limit_count 0 — no API
 maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+- FN: Kin Lane
+  email: kin@apievangelist.com
+x-enrichment:
+  date: '2026-09-19'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v3
+x-coverage:
+  state: none
+  reason: not-a-software-company
+  detail: 'Comfort Systems USA is an HVAC, electrical and plumbing contractor (NYSE: FIX, SIC 1731 Electrical Work)
+    whose only web surfaces are a SiteGround-hosted WordPress marketing site and a Notified investor-relations site
+    with no developer, API, integration or partner page anywhere in their navigation; the api.comfortsystemsusa.com
+    and developer.comfortsystemsusa.com hosts the prior scaffolded API entry named do not exist in DNS (NXDOMAIN),
+    and every path on comfortsystemsusa.com — including /openapi.json, /llms.txt and every /.well-known/ document
+    — answers a 202 sgcaptcha bot-challenge shell rather than a document.'
+  evidence:
+  - url: https://api.comfortsystemsusa.com/
+    status: 0
+  - url: https://developer.comfortsystemsusa.com/docs
+    status: 0
+  - url: https://www.comfortsystemsusa.com/openapi.json
+    status: 202
+  - url: https://www.comfortsystemsusa.com/llms.txt
+    status: 202
+  - url: https://www.comfortsystemsusa.com/.well-known/agent-card.json
+    status: 202
+  - url: https://investors.comfortsystemsusa.com/
+    status: 403
+  - url: https://api.github.com/orgs/comfort-systems-usa
+    status: 200
+  - url: https://pypi.org/pypi/comfortsystemsusa/json
+    status: 404
+  checked: '2026-09-19'

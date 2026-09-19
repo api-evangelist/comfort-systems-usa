@@ -1,33 +1,18 @@
-specification: API Commons Rate Limits
-specificationVersion: '0.1'
-schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/RateLimits
-provider: Comfort Systems USA
-providerId: comfort-systems-usa
-created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-05'
-reconciled: false
-tags:
-  - Rate Limiting
-  - Construction
-  - HVAC
-description: Comfort Systems USA does not publish a public API or rate-limit documentation. Building-automation
-  systems delivered to clients have their own (project-specific) limits.
-sources:
-  - https://www.comfortsystemsusa.com/
-notes: No public API exists; nothing to reconcile.
-responseCodes:
-  throttled: 429
-limits:
-  - name: No public API
-    scope: contract
-    metric: varies
-    limit: not applicable
-policies:
-  - name: Project-governed
-    description: Any data exchange is governed by individual project contracts.
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+generated: '2026-09-19'
+method: searched
+source: https://comfortsystemsusa.com/
+limit_count: 0
+rate_limits: []
+note: >-
+  No published rate limits, because no public API is documented. The two API hosts the prior
+  scaffolded record named (api.comfortsystemsusa.com, developer.comfortsystemsusa.com) do not
+  exist in DNS, so nothing could be observed at runtime either. The only machine surface on the
+  domain is the stock WordPress REST API at /wp-json/ (a CMS endpoint, not a company product),
+  and every live request to comfortsystemsusa.com answers a SiteGround sgcaptcha challenge that
+  emits no RateLimit-*, X-RateLimit-* or Retry-After header. The prior version of this file
+  (bulk sweep 2026-05-04, method: generated) carried a placeholder "No public API" limit row;
+  it has been replaced by this honest zero.
+headers_observed: []
+evidence:
+- {url: 'https://www.comfortsystemsusa.com/', status: 202, headers: 'sg-captcha: challenge; x-robots-tag: noindex; no rate-limit headers'}
+- {url: 'https://api.comfortsystemsusa.com/', status: 0, headers: 'NXDOMAIN'}

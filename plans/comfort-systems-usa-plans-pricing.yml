@@ -1,45 +1,16 @@
-specification: API Commons Plans
-specificationVersion: '0.1'
-schema: https://raw.githubusercontent.com/api-evangelist/interface-research/main/schema/api-commons.yml#/$defs/Plans
-provider: Comfort Systems USA
-providerId: comfort-systems-usa
-created: '2026-05-04'
-# Provenance stamped 2026-08-11: this artifact was written by the API Evangelist
-# bulk sweep dated 2026-05-04, not harvested from the provider. See roadmap#35.
-method: generated
-modified: '2026-05-05'
-reconciled: false
-tags:
-  - Construction
-  - HVAC
-  - Mechanical Services
-description: Comfort Systems USA is a mechanical/HVAC contractor delivering construction, modular, building
-  services, and building-automation projects. Services are quoted per-project; there is no public API
-  or developer pricing.
-sources:
-  - https://www.comfortsystemsusa.com/
-notes: No public API or developer plan; engagements are project-based via subsidiary companies.
-plans:
-  - id: comfort-systems-usa-project
-    name: Project / Service Contract
-    type: enterprise
-    description: Mechanical, HVAC, plumbing, building-automation work bid per project or service contract.
-    entries:
-      - label: Custom project quote
-        name: project_custom
-        type: subscription
-        metric: contract
-        limit: -1
-        timeFrame: usage
-        geo: US
-        unit: 1
-        price: contact subsidiary
-        userMultiplied: false
-    elements:
-      - name: Construction services
-      - name: Modular construction
-      - name: Building services
-      - name: Building automation
-maintainers:
-  - FN: Kin Lane
-    email: kin@apievangelist.com
+generated: '2026-09-19'
+method: searched
+source: https://comfortsystemsusa.com/what-we-do/building-services/
+plan_count: 0
+plans: []
+note: >-
+  Comfort Systems USA publishes no API and therefore no API plans, tiers, quotas or overage
+  schedule. It sells mechanical, electrical and plumbing construction, modular/off-site
+  construction, building services and building-automation work through more than 45 operating
+  companies, bid per project or service contract. The prior version of this file (bulk sweep
+  2026-05-04, method: generated) carried an invented "Project / Service Contract" plan with a
+  "contact subsidiary" price; that entry was a scaffold and has been removed. An honest zero.
+evidence:
+- {url: 'https://comfortsystemsusa.com/', status: 202, finding: 'SiteGround sgcaptcha challenge shell on every live request; Wayback 2026-06-24 capture shows a WordPress marketing site with no pricing, developer or API page in navigation or footer'}
+- {url: 'https://comfortsystemsusa.com/what-we-do/building-services/', status: 202, finding: 'service line page (maintenance, on-demand, retrofit); no published prices'}
+- {url: 'https://developer.comfortsystemsusa.com/', status: 0, finding: 'host named by the prior scaffolded API entry does not exist in DNS'}

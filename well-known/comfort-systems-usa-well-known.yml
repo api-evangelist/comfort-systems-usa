@@ -1,0 +1,137 @@
+generated: '2026-09-19'
+method: probed
+source: >-
+  Live anonymous GET of the named /.well-known/ path list against every host this record knows:
+  the registrable domain and www (both resolve to 34.174.38.32, a SiteGround-hosted WordPress
+  site), the investor-relations host, and the two hosts the prior scaffolded API entry named
+  (developer.comfortsystemsusa.com, api.comfortsystemsusa.com), which do not exist in DNS
+  (NXDOMAIN) and are recorded as status 0. No pointer is emitted because no host served a
+  document. On comfortsystemsusa.com every path — including / — answers HTTP 202 with a 169-209
+  byte HTML meta-refresh to /.well-known/sgcaptcha/ (header sg-captcha: challenge), a SiteGround
+  bot challenge that is identical for every path and is not a document; we do not evade challenges.
+  investors.comfortsystemsusa.com answers an Akamai 403 "Access Denied" (errors.edgesuite.net
+  reference) for every path.
+hosts:
+- host: comfortsystemsusa.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+  - path: /.well-known/openid-configuration
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+  - path: /.well-known/api-catalog
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+  - path: /.well-known/ai-plugin.json
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+  - path: /.well-known/agent-card.json
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+  - path: /.well-known/agent.json
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+- host: www.comfortsystemsusa.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+  - path: /.well-known/openid-configuration
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+  - path: /.well-known/oauth-authorization-server
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+  - path: /.well-known/api-catalog
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+  - path: /.well-known/ai-plugin.json
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+  - path: /.well-known/agent-card.json
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+  - path: /.well-known/agent.json
+    status: 202
+    file: null
+    note: SiteGround sgcaptcha challenge shell, not a document
+- host: investors.comfortsystemsusa.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 403
+    file: null
+    note: Akamai Access Denied for every path on this host
+  - path: /.well-known/openid-configuration
+    status: 403
+    file: null
+  - path: /.well-known/oauth-authorization-server
+    status: 403
+    file: null
+  - path: /.well-known/api-catalog
+    status: 403
+    file: null
+  - path: /.well-known/ai-plugin.json
+    status: 403
+    file: null
+  - path: /.well-known/agent-card.json
+    status: 403
+    file: null
+  - path: /.well-known/agent.json
+    status: 403
+    file: null
+- host: developer.comfortsystemsusa.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    file: null
+    note: host does not exist in DNS (NXDOMAIN); named only by the prior scaffolded API entry
+  - path: /.well-known/agent-card.json
+    status: 0
+    file: null
+  - path: /.well-known/agent.json
+    status: 0
+    file: null
+- host: api.comfortsystemsusa.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 0
+    file: null
+    note: host does not exist in DNS (NXDOMAIN); named only by the prior scaffolded API entry
+  - path: /.well-known/agent-card.json
+    status: 0
+    file: null
+  - path: /.well-known/agent.json
+    status: 0
+    file: null
+notes:
+  contract_discovery: >-
+    /openapi.json, /swagger.json, /api-docs, /llms.txt, /robots.txt, /sitemap.xml, /wp-json/ and
+    /wp-json/wp/v2/pages on comfortsystemsusa.com all return the same 202 sgcaptcha shell. The
+    Wayback Machine capture of the homepage (2026-06-24) shows a stock WordPress site (theme
+    BackBone, built by Versa Creative) exposing only the WordPress core REST API at /wp-json/ —
+    a CMS surface, not a company product. No developer, API, integration or partner-portal link
+    exists anywhere in the site navigation or footer.
+  github: >-
+    api.github.com/orgs/comfort-systems-usa answers 200 for an org named Comfort-Systems-USA with
+    0 public repositories, no display name, no blog URL and no description; it cannot be tied to
+    the company and is not recorded as a GitHubOrganization pointer.
+  registries: >-
+    npm search "comfort systems usa" returns nothing first-party; pypi.org/pypi/comfortsystemsusa
+    and comfort-systems-usa both 404.

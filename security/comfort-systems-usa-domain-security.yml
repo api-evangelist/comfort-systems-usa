@@ -1,11 +1,11 @@
-generated: '2026-07-11'
+generated: '2026-09-19'
 method: probed
 source: live DNS/TLS/HTTP probes of apis.yml + OpenAPI hosts
 hosts:
 - host: www.comfortsystemsusa.com
   https: true
   tls_version: TLSv1.3
-  cert_expires: Aug 23 01:53:57 2026 GMT
+  cert_expires: Nov  4 15:34:01 2026 GMT
   hsts: false
 - host: developer.comfortsystemsusa.com
   https: false
