@@ -50,6 +50,8 @@ modified: '2026-09-19'
 specificationVersion: '0.23'
 apis: []
 common:
+- type: FinOps
+  url: finops/comfort-systems-usa-finops.yml
 - type: Website
   url: https://www.comfortsystemsusa.com
   x-note: live probe answers HTTP 202 SiteGround sgcaptcha bot challenge to our crawler; page exists (Wayback 2026-06-24,
