@@ -1,4 +1,4 @@
-# Comfort Systems USA (comfort-systems-usa)
+# Comfort Systems USA
 
 <!-- API-EVANGELIST-PROVENANCE:BEGIN -->
 > ### About this repository
@@ -64,25 +64,98 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Comfort Systems USA (NYSE: FIX) is a Houston-based mechanical, electrical and plumbing contractor that installs, services and maintains HVAC, piping, electrical and building-automation systems for commercial, industrial and institutional buildings through more than 45 operating companies in over 170 US locations.
+Comfort Systems USA (NYSE: FIX) is a Houston-based mechanical, electrical and plumbing contractor — one of the largest in the United States — that installs, services and maintains HVAC, piping, electrical and building-automation systems for commercial, industrial and institutional buildings through more than 45 operating companies in over 170 locations. Its business lines are construction (engineering and design, prefabrication, virtual construction), modular and off-site construction, building services (maintenance, on-demand and retrofit) and building automation (controls, monitoring, security and energy management). The company publishes no public API, developer program, SDK or machine-readable contract; its web presence is a WordPress marketing site and an investor-relations site.
 
-## Not published by Comfort Systems USA
+**Areas:** HVAC · Mechanical · Construction · Electrical · Plumbing · Building Automation · Modular Construction · Building Services · Energy Management · Fortune 1000
 
-This profile records an honest absence, checked 2026-09-19. Comfort Systems USA publishes **no public API, developer program, SDK, OpenAPI, llms.txt, agent card or `/.well-known/` document**. An earlier scaffolded entry on this repository named `api.comfortsystemsusa.com` and `developer.comfortsystemsusa.com`; neither host exists in DNS, and the entry has been removed. The company's web presence is a WordPress marketing site (`comfortsystemsusa.com`, which answers a SiteGround bot challenge to crawlers) and a Notified investor-relations site (`investors.comfortsystemsusa.com`). The only machine surface on the domain is the stock WordPress REST API at `/wp-json/`, a CMS endpoint rather than a company product. See `x-coverage` in `apis.yml` and `well-known/` for the probe record.
+## Comfort Systems USA on APIs.io
 
-**URL:** [Visit APIs.json URL](https://raw.githubusercontent.com/api-evangelist/comfort-systems-usa/refs/heads/main/apis.yml)
+Everything profiled for Comfort Systems USA is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/comfort-systems-usa/](https://apis.io/providers/comfort-systems-usa/)** — or go straight to one of the APIs or properties below.
 
-## Tags:
+### Published properties
 
- - HVAC, Mechanical, Construction, Electrical, Plumbing, Building Automation, Modular Construction, Building Services, Energy Management, Fortune 1000
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
 
-## Timestamps
+#### Security (1)
 
-- **Created:** 2026-04-19
-- **Modified:** 2026-09-19
+Authentication, trust centre, and vulnerability disclosure.
 
-## Maintainers
+- [Comfort Systems Usa Domain Security](https://apis.io/security/comfort-systems-usa/comfort-systems-usa-domain-security/)
 
-**FN:** Kin Lane
+#### Plans and pricing (1)
 
-**Email:** kin@apievangelist.com
+Published plans, tiers and prices.
+
+- [Comfort Systems Usa Plans Pricing](https://apis.io/plans/comfort-systems-usa/comfort-systems-usa-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Comfort Systems Usa Rate Limits](https://apis.io/rate-limits/comfort-systems-usa/comfort-systems-usa-rate-limits/)
+
+#### FinOps (1)
+
+What the API costs to run, by operation.
+
+- [Comfort Systems Usa Finops](https://apis.io/finops/comfort-systems-usa/comfort-systems-usa-finops/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://www.comfortsystemsusa.com)
+- [Privacy policy](https://comfortsystemsusa.com/privacy-policy/)
+
+## API Evangelist rating
+
+**Kin Score 4.3** — minimal · rubric 0.24.0 · scored 2026-10-17
+
+| Facet | Score |
+|---|---|
+| Discoverability | 50.0 |
+| Contract quality | 0.0 |
+| Contract governance | 0.0 |
+| Operational transparency | 0.0 |
+| Developer ergonomics | 0.0 |
+| Access clarity | 0.0 |
+
+**Agent readiness 2.5** — human-only
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | — |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | — |
+| Auth Clarity | — |
+| Idempotency | — |
+| Error Semantics | — |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | — |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+
+**Regulatory alignment 8.2** — Energy & Utilities
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/comfort-systems-usa/](https://apis.io/providers/comfort-systems-usa/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Comfort Systems USA: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/comfort-systems-usa/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
